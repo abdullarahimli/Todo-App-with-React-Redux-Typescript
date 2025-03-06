@@ -22,6 +22,15 @@ function Todo() {
           <MdDelete className='delete' />
         </div>
       </div>
+      <div className="todo">
+        <div className='title'>Type anythings</div>
+        <div className='buttons'>
+          {
+            editable ? <ImCheckmark onClick={toggleEdit} className='check' /> : <MdEdit onClick={toggleEdit} className='edit' />
+          }
+          <MdDelete className='delete' />
+        </div>
+      </div>
     </div>
   )
 }
